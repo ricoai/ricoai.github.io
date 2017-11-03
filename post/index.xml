@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Post on rico.ai</title>
+    <link>http://www.rico.ai/post/</link>
+    <description>Recent content in Post on rico.ai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2017</copyright>
+    <lastBuildDate>Thu, 02 Nov 2017 21:49:32 -0700</lastBuildDate>
+    
+	<atom:link href="http://www.rico.ai/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Donkeycar_30_epochs</title>
+      <link>http://www.rico.ai/donkeycar-30-epoch/</link>
+      <pubDate>Thu, 02 Nov 2017 21:49:32 -0700</pubDate>
+      
+      <guid>http://www.rico.ai/donkeycar-30-epoch/</guid>
+      <description>Donkeycar 30 Epochs</description>
+    </item>
+    
+    <item>
+      <title>Donkey Car 200 epochs</title>
+      <link>http://www.rico.ai/donkeycar-200-epoch/</link>
+      <pubDate>Thu, 02 Nov 2017 19:18:24 +0200</pubDate>
+      
+      <guid>http://www.rico.ai/donkeycar-200-epoch/</guid>
+      <description>Donkeycar with 200 Epochs
+This is rico.ai Rico Castelo</description>
+    </item>
+    
+  </channel>
+</rss>

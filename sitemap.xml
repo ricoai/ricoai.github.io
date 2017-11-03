@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://www.rico.ai/donkeycar-30-epoch/</loc>
+    <lastmod>2017-11-02T21:49:32-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.rico.ai/about/</loc>
+    <lastmod>2017-11-02T21:18:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.rico.ai/donkeycar-200-epoch/</loc>
+    <lastmod>2017-11-02T19:18:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.rico.ai/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rico.ai/tags/donkey/</loc>
+    <lastmod>2017-11-02T21:49:32-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rico.ai/tags/donkeycar/</loc>
+    <lastmod>2017-11-02T21:49:32-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rico.ai/tags/nerual-network/</loc>
+    <lastmod>2017-11-02T21:49:32-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rico.ai/post/</loc>
+    <lastmod>2017-11-02T21:49:32-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rico.ai/tags/</loc>
+    <lastmod>2017-11-02T21:49:32-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rico.ai/tags/tensorflow/</loc>
+    <lastmod>2017-11-02T21:49:32-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.rico.ai/</loc>
+    <lastmod>2017-11-02T21:49:32-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
