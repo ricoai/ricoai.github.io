@@ -13,12 +13,15 @@
     
     
     <item>
-      <title>Donkeycar_30_epochs</title>
-      <link>http://www.rico.ai/donkeycar-30-epoch/</link>
+      <title>Donkeycar Test 4</title>
+      <link>http://www.rico.ai/donkeycar-test-4/</link>
       <pubDate>Thu, 02 Nov 2017 21:49:32 -0700</pubDate>
       
-      <guid>http://www.rico.ai/donkeycar-30-epoch/</guid>
-      <description>Donkeycar 30 Epochs</description>
+      <guid>http://www.rico.ai/donkeycar-test-4/</guid>
+      <description>Donkeycar - 50 Epochs, RMSPROP, 10% Dropout, 1e-4 Learning Rate
+Results: Not very good results. Frequently went off the track.
+
+# TRAINING BATCH_SIZE = 128 TRAIN_TEST_SPLIT = 0.8 # Keras settings TRAINING_MODEL = MODEL_TYPE_CATEGORICAL # Type of Neural Network model IS_TENSORBOARD = True # Create Tensorboard data IS_PLOT_RESULTS = True # Create matplotlib plots IS_EARLY_STOP = False # If no improve, stop training early EARLY_STOP_COUNT = 5 # Number of no changes before stopping LEARNING_RATE = 1.</description>
     </item>
     
     <item>
