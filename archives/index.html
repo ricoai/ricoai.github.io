@@ -18,21 +18,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.30.2 with theme Tranquilpeak 0.4.3-BETA">
-    <title>Rico.AI</title>
+    <title>Archives</title>
     <meta name="author" content="Rico Castelo">
     <meta name="keywords" content="">
 
     <link rel="icon" href="http://www.rico.ai/favicon.png">
     
-      <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.rico.ai/index.xml">
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.rico.ai/archives/index.xml">
     
 
     
     <meta name="description" content="Hugo tranquilpeak theme demo">
     <meta property="og:description" content="Hugo tranquilpeak theme demo">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Rico.AI">
-    <meta property="og:url" content="/">
+    <meta property="og:title" content="Archives">
+    <meta property="og:url" content="/archives/">
     <meta property="og:site_name" content="Rico.AI">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Rico.AI">
@@ -191,99 +191,34 @@
   </div>
 </nav>
 
-      
-
       <div id="main" data-behavior="1"
         class="
                hasCoverMetaIn
                ">
-        <section class="postShorten-group main-content-wrap">
-          
-          
-            
+        <div id="archives" class="main-content-wrap">
+          <form id="filter-form" action="#">
+            <input name="date" type="text" class="form-control input--xlarge" placeholder="Search date (YYYY/MM/DD)" autofocus="autofocus">
+          </form>
+          <h5 class="archive-result text-color-base text-xlarge" data-message-zero="no post found" data-message-one="1 post found" data-message-other="{n} posts found"></h5>
+<section class="boxes">
   
     
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="http://www.rico.ai/donkeycar-test4/">
-          DonkeyCar Test4
-        </a>
-      </h1>
+    <div class="archive archive-year box" data-date="2017">
+      <h4 class="archive-title" style="text-decoration: none;">2017</h4>
       
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2017-11-15T22:12:57-08:00">
-        
-  November 15, 2017
-
-      </time>
-    
-    
-  
-  
-    <span>in</span>
-    
-      <a class="category-link" href="http://www.rico.ai/categories/donkeycar">donkeycar</a>
-    
-  
-
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      Donkeycar - 50 Epochs, RMSPROP, 10% Dropout, 1e-4 Learning Rate
-Results: Pretty good results. Went off the track in certain areas.
-    config.pyconfig.py     1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-  # TRAINING BATCH_SIZE = 128 TRAIN_TEST_SPLIT = 0.8 # Keras settings TRAINING_MODEL = MODEL_TYPE_CATEGORICAL # Type of Neural Network model IS_TENSORBOARD = True # Create Tensorboard data IS_PLOT_RESULTS = True # Create matplotlib plots IS_EARLY_STOP = False # If no improve, stop training early EARLY_STOP_COUNT = 5 # Number of no changes before stopping LEARNING_RATE = 1.
-      <p>
-        <a href="http://www.rico.ai/donkeycar-test4/" class="postShorten-excerpt_link link">Continue reading</a>
-        
-      </p>
-    </div>
-  </div>
-  
-    <a href="http://www.rico.ai/donkeycar-test4/">
-      <div class="postShorten-thumbnailimg">
-        <img alt="" itemprop="image" src="http://www.rico.ai/img/donkeycar/test4/loss.png"/>
-      </div>
-    </a>
-  
-</article>
-
+        <ul class="archive-posts archive-month" data-date="201711">
+          <h5 class="archive-title" style="text-decoration: none;">November</h5>
           
+            <li class="archive-post archive-day" data-date="20171115">
+              <a class="archive-post-title" href="http://www.rico.ai/donkeycar-test4/">DonkeyCar Test4</a>
+            </li>
           
-
-        </section>
-        <footer id="footer" class="main-content-wrap">
-  <span class="copyrights">
-    &copy; 2017 <a href="https://github.com/ricoai">rico.ai</a>. All Rights Reserved
-  </span>
-</footer>
-
+        </ul>
+      
+    </div>
+  
+</section>
+        </div>
       </div>
     </div>
     
@@ -420,3 +355,4 @@ $(document).ready(function() {
     
   </body>
 </html>
+
