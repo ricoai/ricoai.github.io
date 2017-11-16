@@ -30,72 +30,21 @@
     
 
     
-    <meta name="description" content="Donkeycar - 50 Epochs, RMSPROP, 10% Dropout, 1e-4 Learning Rate
-Results: Pretty good results. Went off the track in certain areas.
-    config.pyconfig.py     1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-  # TRAINING BATCH_SIZE = 128 TRAIN_TEST_SPLIT = 0.8 # Keras settings TRAINING_MODEL = MODEL_TYPE_CATEGORICAL # Type of Neural Network model IS_TENSORBOARD = True # Create Tensorboard data IS_PLOT_RESULTS = True # Create matplotlib plots IS_EARLY_STOP = False # If no improve, stop training early EARLY_STOP_COUNT = 5 # Number of no changes before stopping LEARNING_RATE = 1.">
-    <meta property="og:description" content="Donkeycar - 50 Epochs, RMSPROP, 10% Dropout, 1e-4 Learning Rate
-Results: Pretty good results. Went off the track in certain areas.
-    config.pyconfig.py     1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-  # TRAINING BATCH_SIZE = 128 TRAIN_TEST_SPLIT = 0.8 # Keras settings TRAINING_MODEL = MODEL_TYPE_CATEGORICAL # Type of Neural Network model IS_TENSORBOARD = True # Create Tensorboard data IS_PLOT_RESULTS = True # Create matplotlib plots IS_EARLY_STOP = False # If no improve, stop training early EARLY_STOP_COUNT = 5 # Number of no changes before stopping LEARNING_RATE = 1.">
+    <meta name="description" content="Donkeycar Test 4
+Descriptions I am testing here the number of epochs to use. I am monitoring the Loss to make sure it drops and if it plateaus. If it plateaus, where does it begin to plateau. I am also using a very small dropout and using RMSPROP. The learning rate is left default.
+Good results will have the car remaining on the track consitently. It may drive off, in certain areas if the training is not good, but it should for the most part stay within the lines.">
+    <meta property="og:description" content="Donkeycar Test 4
+Descriptions I am testing here the number of epochs to use. I am monitoring the Loss to make sure it drops and if it plateaus. If it plateaus, where does it begin to plateau. I am also using a very small dropout and using RMSPROP. The learning rate is left default.
+Good results will have the car remaining on the track consitently. It may drive off, in certain areas if the training is not good, but it should for the most part stay within the lines.">
     <meta property="og:type" content="blog">
     <meta property="og:title" content="DonkeyCar Test4">
     <meta property="og:url" content="/donkeycar-test4/">
     <meta property="og:site_name" content="Rico.AI">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Rico.AI">
-    <meta name="twitter:description" content="Donkeycar - 50 Epochs, RMSPROP, 10% Dropout, 1e-4 Learning Rate
-Results: Pretty good results. Went off the track in certain areas.
-    config.pyconfig.py     1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-  # TRAINING BATCH_SIZE = 128 TRAIN_TEST_SPLIT = 0.8 # Keras settings TRAINING_MODEL = MODEL_TYPE_CATEGORICAL # Type of Neural Network model IS_TENSORBOARD = True # Create Tensorboard data IS_PLOT_RESULTS = True # Create matplotlib plots IS_EARLY_STOP = False # If no improve, stop training early EARLY_STOP_COUNT = 5 # Number of no changes before stopping LEARNING_RATE = 1.">
+    <meta name="twitter:description" content="Donkeycar Test 4
+Descriptions I am testing here the number of epochs to use. I am monitoring the Loss to make sure it drops and if it plateaus. If it plateaus, where does it begin to plateau. I am also using a very small dropout and using RMSPROP. The learning rate is left default.
+Good results will have the car remaining on the track consitently. It may drive off, in certain areas if the training is not good, but it should for the most part stay within the lines.">
     
       <meta name="twitter:creator" content="@rico_deep_ai">
     
@@ -305,11 +254,42 @@ Results: Pretty good results. Went off the track in certain areas.
             <div class="main-content-wrap">
               
 
-<p>Donkeycar -  50 Epochs, RMSPROP, 10% Dropout, 1e-4 Learning Rate</p>
+<p>Donkeycar Test 4</p>
+
+<h4 id="descriptions">Descriptions</h4>
+
+<p>I am testing here the number of epochs to use.  I am monitoring the Loss to make sure it drops and if it plateaus.  If it plateaus, where does it begin to plateau.  I am also using a very small dropout and using RMSPROP.  The learning rate is left default.</p>
+
+<p>Good results will have the car remaining on the track consitently.  It may drive off, in certain areas if the training is not good, but it should for the most part stay within the lines.  The video shows the result of the parameters.</p>
+
+<h4 id="parameters">Parameters</h4>
+
+<ul>
+<li>50 Epochs
+
+<ul>
+<li>Typically only need 23 for early stop to end</li>
+</ul></li>
+<li>RMSPROP
+
+<ul>
+<li>Could also use Adam</li>
+</ul></li>
+<li>10% Dropout
+
+<ul>
+<li>Typically you see 50%</li>
+</ul></li>
+<li>1e-4 Learning Rate
+
+<ul>
+<li>A default value to start with</li>
+</ul></li>
+</ul>
 
 <h4 id="results">Results:</h4>
 
-<div class="alert success ">
+<div class="alert warning ">
   <p>Pretty good results.  Went off the track in certain areas.</p>
 </div>
 
@@ -363,7 +343,7 @@ DROPOUT_1 = 0.1                             # First Dropout percentage
 DROPOUT_2 = 0.1                             # Second Dropout percentage
 OPTIMIZER = OPTIMIZER_TYPE_RMSPROP          # Type of Optimizer to use.
 LOSS_WEIGHT_ANGLE = 0.9                     # Loss weight for Angles
-LOSS_WEIGHT_THROTTLE = 0.001                # Loss Weight for Throttle              </code></pre>
+LOSS_WEIGHT_THROTTLE = 0.001                # Loss Weight for Throttle        </code></pre>
         </td>
       </tr>
     </tbody>
@@ -379,6 +359,8 @@ LOSS_WEIGHT_THROTTLE = 0.001                # Loss Weight for Throttle          
 <p><img src="http://www.rico.ai/img/donkeycar/test4/throttle_out_loss.png" alt="Test 4 Throttle Out Loss Plot" /></p>
 
 <p><img src="http://www.rico.ai/img/donkeycar/test4/throttle_out_acc.png" alt="Test 4 Throttle Out Accuracy Plot" /></p>
+
+<h4 id="gallery">Gallery</h4>
 
               
   
@@ -701,26 +683,9 @@ LOSS_WEIGHT_THROTTLE = 0.001                # Loss Weight for Throttle          
                   Nov 11, 2017
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather">Donkeycar - 50 Epochs, RMSPROP, 10% Dropout, 1e-4 Learning Rate
-Results: Pretty good results. Went off the track in certain areas.
-    config.pyconfig.py     1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-  # TRAINING BATCH_SIZE = 128 TRAIN_TEST_SPLIT = 0.8 # Keras settings TRAINING_MODEL = MODEL_TYPE_CATEGORICAL # Type of Neural Network model IS_TENSORBOARD = True # Create Tensorboard data IS_PLOT_RESULTS = True # Create matplotlib plots IS_EARLY_STOP = False # If no improve, stop training early EARLY_STOP_COUNT = 5 # Number of no changes before stopping LEARNING_RATE = 1.</div>
+              <div class="media-content hide-xs font-merryweather">Donkeycar Test 4
+Descriptions I am testing here the number of epochs to use. I am monitoring the Loss to make sure it drops and if it plateaus. If it plateaus, where does it begin to plateau. I am also using a very small dropout and using RMSPROP. The learning rate is left default.
+Good results will have the car remaining on the track consitently. It may drive off, in certain areas if the training is not good, but it should for the most part stay within the lines.</div>
             </div>
             <div style="clear:both;"></div>
             <hr>
