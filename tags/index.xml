@@ -2,111 +2,111 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Rico.ai</title>
-    <link>http://www.rico.ai/tags/</link>
+    <link>https://www.rico.ai/tags/</link>
     <description>Recent content in Tags on Rico.ai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Nov 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.rico.ai/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.rico.ai/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Donkey</title>
-      <link>http://www.rico.ai/tags/donkey/</link>
+      <link>https://www.rico.ai/tags/donkey/</link>
       <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.rico.ai/tags/donkey/</guid>
+      <guid>https://www.rico.ai/tags/donkey/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Donkeycar</title>
-      <link>http://www.rico.ai/tags/donkeycar/</link>
+      <link>https://www.rico.ai/tags/donkeycar/</link>
       <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.rico.ai/tags/donkeycar/</guid>
+      <guid>https://www.rico.ai/tags/donkeycar/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Intel Euclid</title>
-      <link>http://www.rico.ai/tags/intel-euclid/</link>
+      <link>https://www.rico.ai/tags/intel-euclid/</link>
       <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.rico.ai/tags/intel-euclid/</guid>
+      <guid>https://www.rico.ai/tags/intel-euclid/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jestson</title>
-      <link>http://www.rico.ai/tags/jestson/</link>
+      <link>https://www.rico.ai/tags/jestson/</link>
       <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.rico.ai/tags/jestson/</guid>
+      <guid>https://www.rico.ai/tags/jestson/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Nerual Network</title>
-      <link>http://www.rico.ai/tags/nerual-network/</link>
+      <link>https://www.rico.ai/tags/nerual-network/</link>
       <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.rico.ai/tags/nerual-network/</guid>
+      <guid>https://www.rico.ai/tags/nerual-network/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Nvidia</title>
-      <link>http://www.rico.ai/tags/nvidia/</link>
+      <link>https://www.rico.ai/tags/nvidia/</link>
       <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.rico.ai/tags/nvidia/</guid>
+      <guid>https://www.rico.ai/tags/nvidia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>http://www.rico.ai/tags/python/</link>
+      <link>https://www.rico.ai/tags/python/</link>
       <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.rico.ai/tags/python/</guid>
+      <guid>https://www.rico.ai/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ros</title>
-      <link>http://www.rico.ai/tags/ros/</link>
+      <link>https://www.rico.ai/tags/ros/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://www.rico.ai/tags/ros/</guid>
+      <guid>https://www.rico.ai/tags/ros/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tensorflow</title>
-      <link>http://www.rico.ai/tags/tensorflow/</link>
+      <link>https://www.rico.ai/tags/tensorflow/</link>
       <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.rico.ai/tags/tensorflow/</guid>
+      <guid>https://www.rico.ai/tags/tensorflow/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Topic</title>
-      <link>http://www.rico.ai/tags/topic/</link>
+      <link>https://www.rico.ai/tags/topic/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://www.rico.ai/tags/topic/</guid>
+      <guid>https://www.rico.ai/tags/topic/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tx1</title>
-      <link>http://www.rico.ai/tags/tx1/</link>
+      <link>https://www.rico.ai/tags/tx1/</link>
       <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.rico.ai/tags/tx1/</guid>
+      <guid>https://www.rico.ai/tags/tx1/</guid>
       <description></description>
     </item>
     

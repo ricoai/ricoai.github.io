@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on Rico.ai</title>
-    <link>http://www.rico.ai/tags/python/</link>
+    <link>https://www.rico.ai/tags/python/</link>
     <description>Recent content in Python on Rico.ai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 18 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.rico.ai/tags/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.rico.ai/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Intel Euclid</title>
-      <link>http://www.rico.ai/posts/intel_euclid/</link>
+      <link>https://www.rico.ai/posts/intel_euclid/</link>
       <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.rico.ai/posts/intel_euclid/</guid>
+      <guid>https://www.rico.ai/posts/intel_euclid/</guid>
       <description>   Intel Euclid   VNC Install RealVNC Client Connect to Euclid using the following IP
 10.42.0.1:5900 View ROS nodes export ROS_MASTER_URI=http://10.42.0.1:11311 rostopic list rosnode list rosmsg list Install Python Library To Test Euclid export ROS_MASTER_URI=http://10.42.0.1:11311 rostopic list  Run your Python application
 virtualenv -p python3 env source env/bin/activate  Install the LibRealSense Library https://github.com/IntelRealSense/librealsense/blob/v1.12.1/doc/installation.md

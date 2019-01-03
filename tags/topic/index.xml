@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Topic on Rico.ai</title>
-    <link>http://www.rico.ai/tags/topic/</link>
+    <link>https://www.rico.ai/tags/topic/</link>
     <description>Recent content in Topic on Rico.ai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.rico.ai/tags/topic/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.rico.ai/tags/topic/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ROS Topic</title>
-      <link>http://www.rico.ai/posts/ros-topic/</link>
+      <link>https://www.rico.ai/posts/ros-topic/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://www.rico.ai/posts/ros-topic/</guid>
+      <guid>https://www.rico.ai/posts/ros-topic/</guid>
       <description>&lt;p&gt;Notes about an ROS Topic.  This will describe a basic publisher and subscriber topic.  Where to find the list of topics and the list of possible messages for a topic.  How to install a new message for a topic.&lt;/p&gt;</description>
     </item>
     

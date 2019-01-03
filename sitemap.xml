@@ -3,144 +3,144 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.rico.ai/posts/ros-topic/</loc>
+    <loc>https://www.rico.ai/posts/ros-topic/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.rico.ai/posts/intel_euclid/</loc>
+    <loc>https://www.rico.ai/posts/intel_euclid/</loc>
     <lastmod>2018-12-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.rico.ai/posts/ros-euclid/</loc>
+    <loc>https://www.rico.ai/posts/ros-euclid/</loc>
     <lastmod>2018-12-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.rico.ai/posts/donkeycar-30-epochs/</loc>
+    <loc>https://www.rico.ai/posts/donkeycar-30-epochs/</loc>
     <lastmod>2017-11-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.rico.ai/about/</loc>
+    <loc>https://www.rico.ai/about/</loc>
   </url>
   
   <url>
-    <loc>http://www.rico.ai/categories/</loc>
+    <loc>https://www.rico.ai/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.rico.ai/tags/donkey/</loc>
-    <lastmod>2017-11-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.rico.ai/tags/donkeycar/</loc>
+    <loc>https://www.rico.ai/tags/donkey/</loc>
     <lastmod>2017-11-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.rico.ai/categories/donkeycar/</loc>
+    <loc>https://www.rico.ai/categories/donkeycar/</loc>
     <lastmod>2017-11-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.rico.ai/tags/intel-euclid/</loc>
-    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.rico.ai/categories/intel-euclid/</loc>
-    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.rico.ai/tags/jestson/</loc>
-    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.rico.ai/tags/nerual-network/</loc>
+    <loc>https://www.rico.ai/tags/donkeycar/</loc>
     <lastmod>2017-11-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.rico.ai/tags/nvidia/</loc>
+    <loc>https://www.rico.ai/categories/intel-euclid/</loc>
     <lastmod>2018-12-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.rico.ai/categories/nvidia-jetson-tx1/</loc>
+    <loc>https://www.rico.ai/tags/intel-euclid/</loc>
     <lastmod>2018-12-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.rico.ai/posts/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.rico.ai/tags/python/</loc>
+    <loc>https://www.rico.ai/tags/jestson/</loc>
     <lastmod>2018-12-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.rico.ai/</loc>
+    <loc>https://www.rico.ai/tags/nerual-network/</loc>
+    <lastmod>2017-11-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rico.ai/tags/nvidia/</loc>
+    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rico.ai/categories/nvidia-jetson-tx1/</loc>
+    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rico.ai/posts/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.rico.ai/tags/ros/</loc>
+    <loc>https://www.rico.ai/tags/python/</loc>
+    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rico.ai/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.rico.ai/categories/ros/</loc>
+    <loc>https://www.rico.ai/categories/ros/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.rico.ai/tags/</loc>
-    <lastmod>2017-11-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.rico.ai/tags/tensorflow/</loc>
-    <lastmod>2017-11-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.rico.ai/categories/tensorflow/</loc>
-    <lastmod>2017-11-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.rico.ai/tags/topic/</loc>
+    <loc>https://www.rico.ai/tags/ros/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.rico.ai/tags/tx1/</loc>
+    <loc>https://www.rico.ai/tags/</loc>
+    <lastmod>2017-11-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rico.ai/categories/tensorflow/</loc>
+    <lastmod>2017-11-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rico.ai/tags/tensorflow/</loc>
+    <lastmod>2017-11-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rico.ai/tags/topic/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rico.ai/tags/tx1/</loc>
     <lastmod>2018-12-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

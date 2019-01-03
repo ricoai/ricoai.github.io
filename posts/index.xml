@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Rico.ai</title>
-    <link>http://www.rico.ai/posts/</link>
+    <link>https://www.rico.ai/posts/</link>
     <description>Recent content in Posts on Rico.ai</description>
     <meta name="generator" content="Hugo 0.52" />
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="http://www.rico.ai/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.rico.ai/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ROS Topic</title>
-      <link>http://www.rico.ai/posts/ros-topic/</link>
+      <link>https://www.rico.ai/posts/ros-topic/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://www.rico.ai/posts/ros-topic/</guid>
+      <guid>https://www.rico.ai/posts/ros-topic/</guid>
       <description>Notes on using ROS Topics</description>
     </item>
     
     <item>
       <title>Intel Euclid</title>
-      <link>http://www.rico.ai/posts/intel_euclid/</link>
+      <link>https://www.rico.ai/posts/intel_euclid/</link>
       <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.rico.ai/posts/intel_euclid/</guid>
+      <guid>https://www.rico.ai/posts/intel_euclid/</guid>
       <description>Details about the Intel Euclid</description>
     </item>
     
     <item>
       <title>ROS Intel Euclid Install on Nvidia Jeston TX1</title>
-      <link>http://www.rico.ai/posts/ros-euclid/</link>
+      <link>https://www.rico.ai/posts/ros-euclid/</link>
       <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.rico.ai/posts/ros-euclid/</guid>
+      <guid>https://www.rico.ai/posts/ros-euclid/</guid>
       <description>Details to install the Intel Euclid environment on a Nvidia Jetson TX1</description>
     </item>
     
     <item>
       <title>Donkeycar Test 4</title>
-      <link>http://www.rico.ai/posts/donkeycar-30-epochs/</link>
+      <link>https://www.rico.ai/posts/donkeycar-30-epochs/</link>
       <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.rico.ai/posts/donkeycar-30-epochs/</guid>
+      <guid>https://www.rico.ai/posts/donkeycar-30-epochs/</guid>
       <description>Donkeycar Test 4</description>
     </item>
     
