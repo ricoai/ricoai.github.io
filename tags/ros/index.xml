@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ros on Rico.ai</title>
+    <link>http://www.rico.ai/tags/ros/</link>
+    <description>Recent content in Ros on Rico.ai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.rico.ai/tags/ros/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ROS Topic</title>
+      <link>http://www.rico.ai/posts/ros-topic/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rico.ai/posts/ros-topic/</guid>
+      <description>&lt;p&gt;Notes about an ROS Topic.  This will describe a basic publisher and subscriber topic.  Where to find the list of topics and the list of possible messages for a topic.  How to install a new message for a topic.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Intel Euclid</title>
+      <link>http://www.rico.ai/posts/intel_euclid/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rico.ai/posts/intel_euclid/</guid>
+      <description>   Intel Euclid   VNC Install RealVNC Client Connect to Euclid using the following IP
+10.42.0.1:5900 View ROS nodes export ROS_MASTER_URI=http://10.42.0.1:11311 rostopic list rosnode list rosmsg list Install Python Library To Test Euclid export ROS_MASTER_URI=http://10.42.0.1:11311 rostopic list  Run your Python application
+virtualenv -p python3 env source env/bin/activate  Install the LibRealSense Library https://github.com/IntelRealSense/librealsense/blob/v1.12.1/doc/installation.md
+sudo apt install libgtk-3-dev cmake .. -DBUILD_EXAMPLES:BOOL=true  </description>
+    </item>
+    
+    <item>
+      <title>ROS Intel Euclid Install on Nvidia Jeston TX1</title>
+      <link>http://www.rico.ai/posts/ros-euclid/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rico.ai/posts/ros-euclid/</guid>
+      <description>Modify the kernal for uvcvideo git clone https://github.com/jetsonhacks/installLibrealsenseTX1.git cd installLibrealsenseTX1  Modify the address to use the Euclid libRealsense Modify the address to use the Euclid version of libRealSense https://github.com/IntelEuclid/librealsense
+./installLibrealsense  Make sure the folder $HOME/librealsense does not exist. If it does, delete the file.
+sudo apt install motion  Get Motion Installed wget https://github.com/Motion-Project/motion/releases/download/release-4.2/xenial_motion_4.2-1_amd64.deb sudo apt-get install xenial_motion_4.2-1_amd64.deb  Install ROS git clone https://github.com/jetsonhacks/installROSTX1.git cd installROSTX1 ./installROSTX1 -p ros-kinetic-desktop-full   .</description>
+    </item>
+    
+  </channel>
+</rss>

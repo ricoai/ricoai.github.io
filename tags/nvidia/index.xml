@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nvidia on Rico.ai</title>
+    <link>http://www.rico.ai/tags/nvidia/</link>
+    <description>Recent content in Nvidia on Rico.ai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.rico.ai/tags/nvidia/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ROS Intel Euclid Install on Nvidia Jeston TX1</title>
+      <link>http://www.rico.ai/posts/ros-euclid/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rico.ai/posts/ros-euclid/</guid>
+      <description>Modify the kernal for uvcvideo git clone https://github.com/jetsonhacks/installLibrealsenseTX1.git cd installLibrealsenseTX1  Modify the address to use the Euclid libRealsense Modify the address to use the Euclid version of libRealSense https://github.com/IntelEuclid/librealsense
+./installLibrealsense  Make sure the folder $HOME/librealsense does not exist. If it does, delete the file.
+sudo apt install motion  Get Motion Installed wget https://github.com/Motion-Project/motion/releases/download/release-4.2/xenial_motion_4.2-1_amd64.deb sudo apt-get install xenial_motion_4.2-1_amd64.deb  Install ROS git clone https://github.com/jetsonhacks/installROSTX1.git cd installROSTX1 ./installROSTX1 -p ros-kinetic-desktop-full   .</description>
+    </item>
+    
+  </channel>
+</rss>
