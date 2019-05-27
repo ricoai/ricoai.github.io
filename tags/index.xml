@@ -2,111 +2,138 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Rico.ai</title>
-    <link>https://www.rico.ai/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Rico.ai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Nov 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.rico.ai/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Donkey</title>
-      <link>https://www.rico.ai/tags/donkey/</link>
+      <link>/tags/donkey/</link>
       <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rico.ai/tags/donkey/</guid>
+      <guid>/tags/donkey/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Donkeycar</title>
-      <link>https://www.rico.ai/tags/donkeycar/</link>
+      <link>/tags/donkeycar/</link>
       <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rico.ai/tags/donkeycar/</guid>
+      <guid>/tags/donkeycar/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Intel Euclid</title>
-      <link>https://www.rico.ai/tags/intel-euclid/</link>
-      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Euclid</title>
+      <link>/tags/euclid/</link>
+      <pubDate>Tue, 18 Dec 2018 12:29:40 +0600</pubDate>
       
-      <guid>https://www.rico.ai/tags/intel-euclid/</guid>
+      <guid>/tags/euclid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Intel</title>
+      <link>/tags/intel/</link>
+      <pubDate>Tue, 18 Dec 2018 12:29:40 +0600</pubDate>
+      
+      <guid>/tags/intel/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jestson</title>
-      <link>https://www.rico.ai/tags/jestson/</link>
-      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      <link>/tags/jestson/</link>
+      <pubDate>Wed, 05 Dec 2018 12:29:40 +0600</pubDate>
       
-      <guid>https://www.rico.ai/tags/jestson/</guid>
+      <guid>/tags/jestson/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Nerual Network</title>
-      <link>https://www.rico.ai/tags/nerual-network/</link>
+      <link>/tags/nerual-network/</link>
       <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rico.ai/tags/nerual-network/</guid>
+      <guid>/tags/nerual-network/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Nvidia</title>
-      <link>https://www.rico.ai/tags/nvidia/</link>
-      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      <link>/tags/nvidia/</link>
+      <pubDate>Wed, 05 Dec 2018 12:29:40 +0600</pubDate>
       
-      <guid>https://www.rico.ai/tags/nvidia/</guid>
+      <guid>/tags/nvidia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>https://www.rico.ai/tags/python/</link>
-      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      <link>/tags/python/</link>
+      <pubDate>Tue, 18 Dec 2018 12:29:40 +0600</pubDate>
       
-      <guid>https://www.rico.ai/tags/python/</guid>
+      <guid>/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ros</title>
-      <link>https://www.rico.ai/tags/ros/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <link>/tags/ros/</link>
+      <pubDate>Fri, 04 Jan 2019 12:29:40 +0600</pubDate>
       
-      <guid>https://www.rico.ai/tags/ros/</guid>
+      <guid>/tags/ros/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ros Action</title>
+      <link>/tags/ros-action/</link>
+      <pubDate>Fri, 04 Jan 2019 12:29:40 +0600</pubDate>
+      
+      <guid>/tags/ros-action/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ros Service</title>
+      <link>/tags/ros-service/</link>
+      <pubDate>Fri, 04 Jan 2019 12:29:40 +0600</pubDate>
+      
+      <guid>/tags/ros-service/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ros Topic</title>
+      <link>/tags/ros-topic/</link>
+      <pubDate>Tue, 01 Jan 2019 12:29:40 +0600</pubDate>
+      
+      <guid>/tags/ros-topic/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tensorflow</title>
-      <link>https://www.rico.ai/tags/tensorflow/</link>
+      <link>/tags/tensorflow/</link>
       <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rico.ai/tags/tensorflow/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Topic</title>
-      <link>https://www.rico.ai/tags/topic/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.rico.ai/tags/topic/</guid>
+      <guid>/tags/tensorflow/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tx1</title>
-      <link>https://www.rico.ai/tags/tx1/</link>
-      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      <link>/tags/tx1/</link>
+      <pubDate>Wed, 05 Dec 2018 12:29:40 +0600</pubDate>
       
-      <guid>https://www.rico.ai/tags/tx1/</guid>
+      <guid>/tags/tx1/</guid>
       <description></description>
     </item>
     

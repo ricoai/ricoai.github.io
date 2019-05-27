@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ros Service on Rico.ai</title>
+    <link>/tags/ros-service/</link>
+    <description>Recent content in Ros Service on Rico.ai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Jan 2019 12:29:40 +0600</lastBuildDate>
+    
+	<atom:link href="/tags/ros-service/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ROS Service</title>
+      <link>/blog/ros-service/</link>
+      <pubDate>Fri, 04 Jan 2019 12:29:40 +0600</pubDate>
+      
+      <guid>/blog/ros-service/</guid>
+      <description>&lt;h1 id=&#34;ros-service&#34;&gt;ROS Service&lt;/h1&gt;
+
+&lt;p&gt;A service is a node that must run and you must wait until it has completed.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

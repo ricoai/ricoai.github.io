@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>ROS Actions :: Rico.ai — My notes in the AI world.</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="ROS Actions Similar to an ROS Service except you can do other things while the action is running. Actions are asynchronous.
+Action Servers and Action Clients Action Server contains the functionality
+Action Client calls the Action Server to perform a functionality.
+Commands rostopic list # Look for /&amp;lt;action_server_name&amp;gt;/&amp;lt;unique_msg&amp;gt;  Action Message Message that defines an action. It contains 3 parts: Goal, Result, Feedback.
+Goal is the arguments for the action."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/blog/ros-actions/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="ROS Actions :: Rico.ai — My notes in the AI world." />
+<meta name="twitter:description" content="ROS Actions Similar to an ROS Service except you can do other things while the action is running. Actions are asynchronous.
+Action Servers and Action Clients Action Server contains the functionality
+Action Client calls the Action Server to perform a functionality.
+Commands rostopic list # Look for /&amp;lt;action_server_name&amp;gt;/&amp;lt;unique_msg&amp;gt;  Action Message Message that defines an action. It contains 3 parts: Goal, Result, Feedback.
+Goal is the arguments for the action." />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="Rico Castelo" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="ROS Actions :: Rico.ai — My notes in the AI world.">
+<meta property="og:description" content="ROS Actions Similar to an ROS Service except you can do other things while the action is running. Actions are asynchronous.
+Action Servers and Action Clients Action Server contains the functionality
+Action Client calls the Action Server to perform a functionality.
+Commands rostopic list # Look for /&amp;lt;action_server_name&amp;gt;/&amp;lt;unique_msg&amp;gt;  Action Message Message that defines an action. It contains 3 parts: Goal, Result, Feedback.
+Goal is the arguments for the action." />
+<meta property="og:url" content="/blog/ros-actions/" />
+<meta property="og:site_name" content="ROS Actions" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2019-01-04 12:29:40 &#43;0600 &#43;0600" />
+
+
+
+
+
+
+
+
+
+</head>
+<body class="dark-theme">
+<div class="container">
+  <header class="header">
+  <span class="header__inner">
+    <a href="/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" width="44" height="44" viewBox="0 0 44 44">
+  <polyline fill="none" stroke="#000" stroke-width="2" points="15 8 29.729 22.382 15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">rico.ai</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/blog">Blog</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/blog">Blog</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+  <div class="content">
+    
+  <div class="post">
+    <h2 class="post-title"><a href="/blog/ros-actions/">ROS Actions</a></h2>
+    <div class="post-meta">
+      
+        <span class="post-date">
+            2019-01-04
+        </span>
+      
+      <span class="post-author">— Written by Rico Castelo</span>
+      
+        <span class="post-read-time">— 2 min read</span>
+      
+    </div>
+
+    
+      <span class="post-tags">
+        
+          #<a href="/tags/ros/">ros</a>&nbsp;
+        
+          #<a href="/tags/ros-action/">ros action</a>&nbsp;
+        
+      </span>
+    
+
+    
+
+    <div class="post-content">
+      
+
+<h1 id="ros-actions">ROS Actions</h1>
+
+<p>Similar to an ROS Service except you can do other things while the action is running. Actions are asynchronous.</p>
+
+<h2 id="action-servers-and-action-clients">Action Servers and Action Clients</h2>
+
+<p><strong>Action Server</strong> contains the functionality</p>
+
+<p><strong>Action Client</strong> calls the Action Server to perform a functionality.</p>
+
+<h1 id="commands">Commands</h1>
+
+<pre><code class="language-bash">rostopic list  # Look for /&lt;action_server_name&gt;/&lt;unique_msg&gt;
+
+</code></pre>
+
+<h1 id="action-message">Action Message</h1>
+
+<p>Message that defines an action.  It contains 3 parts: Goal, Result, Feedback.</p>
+
+<p><strong>Goal</strong> is the arguments for the action.</p>
+
+<p><strong>Result</strong> is the result when the action is complete.</p>
+
+<p><strong>Feedback</strong> is feedback as the action is in progress</p>
+
+<pre><code class="language-python"># Goal
+int32 nseconds
+---
+# Result
+sensor_msgs/CompressedImage[] allPictures
+---
+# Feedback
+sensor_msgs/CompressedImage lastImage
+</code></pre>
+
+<h1 id="python-ros-action-client">Python ROS Action Client</h1>
+
+<pre><code class="language-python">import rospy
+import time
+import actionlib
+from ardrone_as.msg import ArdroneAction, ArdroneGoal, ArdroneResult, ArdroneFeedback
+
+nImage = 1
+
+# Feedback callback
+def feedback_callback(feedback):
+    global nImage
+    print('[Feedback] image n.%d received'%nImage)
+    nImage += 1
+
+# Init the action client node
+rospy.init_node('drone_action_client')
+
+# Create connection to the action server
+client = actionlib.SimpleActionClient('/ardrone_action_server', ArdroneAction)
+# waits until the action server is up and running
+client.wait_for_server()
+
+# create a goal to send to the action server
+goal = ArdroneGoal()
+goal.nseconds = 10
+
+# Send the goal to the action server, specifying which feedback function
+# to call when feeback received
+client.send_goal(goal, feeback_cb=feedback_callback)
+
+client.wait_for_result()
+
+print('[Result] State: %d'%(client.get_state()))
+</code></pre>
+
+<h2 id="wait-for-result">Wait for Result</h2>
+
+<p>Using `<code>wait_for_result()</code> is like using a service.</p>
+
+<h2 id="get-state">Get State</h2>
+
+<p>Instead of waiting for result, you can call <code>get_state()</code> and continue to run while it is running.</p>
+
+<pre><code class="language-python">0 = PENDING
+1 = ACTIVE
+2 = DONE
+3 = WARN
+4 = ERROR
+</code></pre>
+
+<p>Use a While loop and while the value returned is less than 2, you know it is still running.</p>
+
+<pre><code class="language-python">...
+PENDING = 0
+ACTIVE = 1
+DONE = 2
+WARN = 3
+ERROR = 4
+
+state_result = client.get_state()
+
+rate = rospy.Rate(1)
+
+rospy.loginfo(&quot;state_result &quot; + str(state_result))
+
+while state_result &lt; DONE:
+    rospy.loginfo(&quot;Doing Stuff while waiting for the server to give a result...&quot;)
+    rate.sleep()
+    state_result = client.get_state()
+    rospy.loginfo(&quot;state_result: &quot; + str(state_result))
+
+rospy.loginfo(&quot;[Result] State: &quot; + str(state_result))
+if state_result == ERROR:
+    rospy.logerr(&quot;Something went wrong in the server side&quot;)
+if state_result == WARN:
+    rospy.logwarn(&quot;There is a warning in the Server Side&quot;)
+</code></pre>
+
+<h1 id="more-details">More Details</h1>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/LoRXdNMuslQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+    </div>
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h">Read other posts</span>
+          <hr />
+        </div>
+        <div class="pagination__buttons">
+          
+          
+            <span class="button next">
+              <a href="/blog/ros-service/">
+                <span class="button__text">ROS Service</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ricoai" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <a href="/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" width="44" height="44" viewBox="0 0 44 44">
+  <polyline fill="none" stroke="#000" stroke-width="2" points="15 8 29.729 22.382 15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">rico.ai</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+      <div class="copyright">
+        <span>© 2019 Powered by <a href="https://gohugo.io">Hugo</a></span>
+        <span>Theme created by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+  
+</div>
+
+</body>
+</html>

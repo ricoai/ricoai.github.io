@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ros Action on Rico.ai</title>
+    <link>/tags/ros-action/</link>
+    <description>Recent content in Ros Action on Rico.ai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Jan 2019 12:29:40 +0600</lastBuildDate>
+    
+	<atom:link href="/tags/ros-action/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ROS Actions</title>
+      <link>/blog/ros-actions/</link>
+      <pubDate>Fri, 04 Jan 2019 12:29:40 +0600</pubDate>
+      
+      <guid>/blog/ros-actions/</guid>
+      <description>ROS Actions Similar to an ROS Service except you can do other things while the action is running. Actions are asynchronous.
+Action Servers and Action Clients Action Server contains the functionality
+Action Client calls the Action Server to perform a functionality.
+Commands rostopic list # Look for /&amp;lt;action_server_name&amp;gt;/&amp;lt;unique_msg&amp;gt;  Action Message Message that defines an action. It contains 3 parts: Goal, Result, Feedback.
+Goal is the arguments for the action.</description>
+    </item>
+    
+  </channel>
+</rss>

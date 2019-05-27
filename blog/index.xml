@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Rico.ai</title>
+    <link>/blog/</link>
+    <description>Recent content in Blogs on Rico.ai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Jan 2019 12:29:40 +0600</lastBuildDate>
+    
+	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ROS Actions</title>
+      <link>/blog/ros-actions/</link>
+      <pubDate>Fri, 04 Jan 2019 12:29:40 +0600</pubDate>
+      
+      <guid>/blog/ros-actions/</guid>
+      <description>ROS Actions Similar to an ROS Service except you can do other things while the action is running. Actions are asynchronous.
+Action Servers and Action Clients Action Server contains the functionality
+Action Client calls the Action Server to perform a functionality.
+Commands rostopic list # Look for /&amp;lt;action_server_name&amp;gt;/&amp;lt;unique_msg&amp;gt;  Action Message Message that defines an action. It contains 3 parts: Goal, Result, Feedback.
+Goal is the arguments for the action.</description>
+    </item>
+    
+    <item>
+      <title>ROS Service</title>
+      <link>/blog/ros-service/</link>
+      <pubDate>Fri, 04 Jan 2019 12:29:40 +0600</pubDate>
+      
+      <guid>/blog/ros-service/</guid>
+      <description>&lt;h1 id=&#34;ros-service&#34;&gt;ROS Service&lt;/h1&gt;
+
+&lt;p&gt;A service is a node that must run and you must wait until it has completed.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ROS Topic</title>
+      <link>/blog/ros-topic/</link>
+      <pubDate>Tue, 01 Jan 2019 12:29:40 +0600</pubDate>
+      
+      <guid>/blog/ros-topic/</guid>
+      <description>&lt;p&gt;Notes about an ROS Topic.  This will describe a basic publisher and subscriber topic.  Where to find the list of topics and the list of possible messages for a topic.  How to install a new message for a topic.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Intel Euclid</title>
+      <link>/blog/intel_euclid/</link>
+      <pubDate>Tue, 18 Dec 2018 12:29:40 +0600</pubDate>
+      
+      <guid>/blog/intel_euclid/</guid>
+      <description> VNC Install RealVNC Client Connect to Euclid using the following IP
+10.42.0.1:5900  View ROS nodes export ROS_MASTER_URI=http://10.42.0.1:11311 rostopic list rosnode list rosmsg list  Install Python Library To Test Euclid export ROS_MASTER_URI=http://10.42.0.1:11311 rostopic list  Run your Python application
+virtualenv -p python3 env source env/bin/activate  Install the LibRealSense Library https://github.com/IntelRealSense/librealsense/blob/v1.12.1/doc/installation.md
+sudo apt install libgtk-3-dev cmake .. -DBUILD_EXAMPLES:BOOL=true  </description>
+    </item>
+    
+    <item>
+      <title>ROS Intel Euclid Install on Nvidia Jeston TX1</title>
+      <link>/blog/ros-euclid/</link>
+      <pubDate>Wed, 05 Dec 2018 12:29:40 +0600</pubDate>
+      
+      <guid>/blog/ros-euclid/</guid>
+      <description>Modify the kernal for uvcvideo git clone https://github.com/jetsonhacks/installLibrealsenseTX1.git cd installLibrealsenseTX1  Modify the address to use the Euclid libRealsense Modify the address to use the Euclid version of libRealSense https://github.com/IntelEuclid/librealsense
+./installLibrealsense  Make sure the folder $HOME/librealsense does not exist. If it does, delete the file.
+sudo apt install motion  Get Motion Installed wget https://github.com/Motion-Project/motion/releases/download/release-4.2/xenial_motion_4.2-1_amd64.deb sudo apt-get install xenial_motion_4.2-1_amd64.deb  Install ROS git clone https://github.com/jetsonhacks/installROSTX1.git cd installROSTX1 ./installROSTX1 -p ros-kinetic-desktop-full   .</description>
+    </item>
+    
+    <item>
+      <title>Donkeycar Test 4</title>
+      <link>/blog/donkeycar-30-epochs/</link>
+      <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/donkeycar-30-epochs/</guid>
+      <description>Descriptions Descriptions I am testing here the number of epochs to use. I am monitoring the Loss to make sure it drops and if it plateaus. If it plateaus, where does it begin to plateau. I am also using a very small dropout and using RMSPROP. The learning rate is left default.
+Good results will have the car remaining on the track consitently. It may drive off, in certain areas if the training is not good, but it should for the most part stay within the lines.</description>
+    </item>
+    
+  </channel>
+</rss>

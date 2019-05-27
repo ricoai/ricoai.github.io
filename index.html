@@ -1,869 +1,355 @@
 <!DOCTYPE html>
-<html lang="en-us">
-	<head>
-		<title>Rico.ai</title>
-		<style>
-	body {
-		display: block;
-		--colorBG: "#40e0d0, #ff8c00, #ff0080";
-		
-			background-image: var(--bgImage) !important;
-		
-	}
-
-	body, body.pushable {
-		background-repeat: no-repeat;
-	  	background-attachment: fixed;
-	  	background-size: cover !important;
-	}
-</style>
-
-		<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-
-	
-	<meta name="author" content="Rico Castelo" />
-	<meta name="description" content="" />
-
-
-
-<meta name="generator" content="Hugo 0.52" />
-
-
-<link rel="shortcut icon" href="/img/defaultFav.ico">
-
-
-
-    <link rel="alternate" type="application/rss+xml" href="https://www.rico.ai/index.xml" title="Rico.ai" />
-
-
-		
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-<script
-	src="https://code.jquery.com/jquery-3.3.1.min.js"
-	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-
-
-
-<link rel="stylesheet" type="text/css" href="/css/site.css">
-
-
-
-
-
-
-	
-		<link rel="stylesheet" type="text/css" href="https://www.rico.ai/css/theme_highlight.css">
-	
-
-
-
-<style>
-	body.pushable {
-		display: block;
-		
-			background-image: var(--bgImage) !important;
-		 ;
-	}
-</style>
-
-
-
-<script>
-	var colorBG =  false 
-	var enabledPost =  false 
-	
-	var isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
-	console.log("The client device is a "+(isMobile?"mobile":"PC")+".")
-</script>
-
-	</head>
-
-	<body>
-		<script>
-var prevBgIndex = 0;
-var bodyBgSwitchIndex = 0;
-
-
-	
-		var bgImage = "url(" + "img/bg.jpg" + ")";
-	
-
-	console.log("Current background: " + bgImage.substring(bgImage.indexOf("bg"), bgImage.length));
-	document.body.style.setProperty('--blurEff',  null );
-	document.body.style.setProperty('--bgImage', bgImage);
-
-
-	function getRandomInt(min, max) {
-	  min = Math.ceil(min);
-	  max = Math.floor(max);
-	  var random;
-	  while (1) {
-	    random = Math.floor(Math.random() * (max - min)) + min;
-	    if (random !== prevBgIndex) {
-	      prevBgIndex = random;
-	      break;
-	    }
-	  }
-	  return random;
-	}
-
-	function connect(arr) {
-	  var str = '';
-	  for (var i = 0; i < arr.length; i++) {
-	    if (i !== arr.length - 1) {
-	      str += arr[i] + ', ';
-	    } else {
-	      str += arr[i];
-	    }
-	  }
-	  return str;
-	}
-</script>
-
-
-
-	<div class="blur-overlay"></div>
-
-
-		<div id="sidebar" class="ui sidebar inverted vertical menu">
-	
-	<section id="author" class="ui top attached center aligned inverted segment">
-		
-<div class="ui small circular image">
-	
-		<img src="logo_ricoai.png">
-	
-</div>
-
-
-<h3 class="ui header">
-	Rico Castelo
-	<div class="sub header">I like to build things.</div>
-</h3>
-
-	</section>
-
-	
-	
-		<section class="ui attached center aligned inverted segment sidebar-dream-tags">
-			
-			
-
-
-
-
-	
-		<a class="ui label red " href="/tags/donkey" title="donkey">donkey</a>
-	
-		<a class="ui label yellow " href="/tags/donkeycar" title="donkeycar">donkeycar</a>
-	
-		<a class="ui label blue " href="/tags/intel-euclid" title="intel-euclid">intel-euclid</a>
-	
-		<a class="ui label brown " href="/tags/jestson" title="jestson">jestson</a>
-	
-		<a class="ui label red " href="/tags/nerual-network" title="nerual-network">nerual-network</a>
-	
-		<a class="ui label teal " href="/tags/nvidia" title="nvidia">nvidia</a>
-	
-		<a class="ui label violet " href="/tags/python" title="python">python</a>
-	
-		<a class="ui label violet " href="/tags/ros" title="ros">ros</a>
-	
-		<a class="ui label teal " href="/tags/tensorflow" title="tensorflow">tensorflow</a>
-	
-		<a class="ui label yellow " href="/tags/topic" title="topic">topic</a>
-	
-		<a class="ui label teal " href="/tags/tx1" title="tx1">tx1</a>
-	
-
-
-		</section>
-	
-
-	
-	
-		<section class="ui attached inverted segment sidebar-dream-categories both flexbox">
-			<div class="ui inverted accordion">
-				
-	
-	<div class="title">
-		<i class="dropdown icon"></i>
-		<a class="link" href="/categories/donkeycar">donkeycar</a>
-	</div>
-
-	
-	<div class="content">
-		
-			<a class="item" href="https://www.rico.ai/posts/donkeycar-30-epochs/">
-				<div>
-					<i class="cocktail icon"></i>
-					<p>Donkeycar Test 4</p>
-				</div>
-			</a>
-		
-	</div>
-
-	
-	<div class="title">
-		<i class="dropdown icon"></i>
-		<a class="link" href="/categories/intel-euclid">intel-euclid</a>
-	</div>
-
-	
-	<div class="content">
-		
-			<a class="item" href="https://www.rico.ai/posts/intel_euclid/">
-				<div>
-					<i class="cocktail icon"></i>
-					<p>Intel Euclid</p>
-				</div>
-			</a>
-		
-			<a class="item" href="https://www.rico.ai/posts/ros-euclid/">
-				<div>
-					<i class="cocktail icon"></i>
-					<p>ROS Intel Euclid Install on Nvidia Jeston TX1</p>
-				</div>
-			</a>
-		
-	</div>
-
-	
-	<div class="title">
-		<i class="dropdown icon"></i>
-		<a class="link" href="/categories/nvidia-jetson-tx1">nvidia-jetson-tx1</a>
-	</div>
-
-	
-	<div class="content">
-		
-			<a class="item" href="https://www.rico.ai/posts/ros-euclid/">
-				<div>
-					<i class="cocktail icon"></i>
-					<p>ROS Intel Euclid Install on Nvidia Jeston TX1</p>
-				</div>
-			</a>
-		
-	</div>
-
-	
-	<div class="title">
-		<i class="dropdown icon"></i>
-		<a class="link" href="/categories/ros">ros</a>
-	</div>
-
-	
-	<div class="content">
-		
-			<a class="item" href="https://www.rico.ai/posts/ros-topic/">
-				<div>
-					<i class="cocktail icon"></i>
-					<p>ROS Topic</p>
-				</div>
-			</a>
-		
-			<a class="item" href="https://www.rico.ai/posts/intel_euclid/">
-				<div>
-					<i class="cocktail icon"></i>
-					<p>Intel Euclid</p>
-				</div>
-			</a>
-		
-			<a class="item" href="https://www.rico.ai/posts/ros-euclid/">
-				<div>
-					<i class="cocktail icon"></i>
-					<p>ROS Intel Euclid Install on Nvidia Jeston TX1</p>
-				</div>
-			</a>
-		
-	</div>
-
-	
-	<div class="title">
-		<i class="dropdown icon"></i>
-		<a class="link" href="/categories/tensorflow">tensorflow</a>
-	</div>
-
-	
-	<div class="content">
-		
-			<a class="item" href="https://www.rico.ai/posts/donkeycar-30-epochs/">
-				<div>
-					<i class="cocktail icon"></i>
-					<p>Donkeycar Test 4</p>
-				</div>
-			</a>
-		
-	</div>
-
-
-			</div>
-		</section>
-	
-
-	
-	<section id="footer" class="ui bottom attached center aligned inverted segment">
-		
-
-	<p>© 2019 Rico.ai</p>
-
-
-<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> theme.</p>
-
-	</section>
-</div>
-
-
-		<div class="pusher">
-			<div class="flipper">
-				<div class="front">
-					
-	<nav class="ui top secondary menu bar">
-	
-	<div class="item">
-		<i class="inverted big link bullseye icon dream-flip-toggle" title="About Me"></i>
-	</div>
-
-	
-	
-
-	
-	
-		
-			<div class="item">
-				<a href="/posts">
-					<i class="inverted big link archive icon" title="Archive"></i>
-				</a>
-			</div>
-		
-	
-
-	
-	
-		<div class="item">
-			<a href="/tags">
-				<i class="inverted big link tags icon" title="All Tags"></i>
-			</a>
-		</div>
-	
-
-	
-	
-		<div class="item">
-			<a href="/categories">
-				<i class="inverted big link cubes icon" title="All Categories"></i>
-			</a>
-    	</div>
-	
-
-	
-	
-		
-		
-		<div class="item">
-			
-			</div>
-		<div class="item">
-			
-		</div>
-	
-
-	
-	
-
-	
-	
-		<div class="item right">
-			<a href="/posts/index.xml">
-				<i class="inverted big link rss icon" title="RSS Feed"></i>
-			</a>
-		</div>
-	
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.52" />
+  
+    <title>Rico.ai — My notes in the AI world.</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="My notes in the AI world."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Rico.ai — My notes in the AI world." />
+<meta name="twitter:description" content="" />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Rico.ai — My notes in the AI world.">
+<meta property="og:description" content="" />
+<meta property="og:url" content="/" />
+<meta property="og:site_name" content="Rico.ai" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+
+
+
+<link href="/index.xml" rel="alternate" type="application/rss+xml" title="Rico.ai" />
+
+
+
+
+
+
+
+</head>
+<body class="dark-theme">
+<div class="container">
+  <header class="header">
+  <span class="header__inner">
+    <a href="/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" width="44" height="44" viewBox="0 0 44 44">
+  <polyline fill="none" stroke="#000" stroke-width="2" points="15 8 29.729 22.382 15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">rico.ai</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/blog">Blog</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/blog">Blog</a></li>
+      
+    
+  </ul>
 </nav>
 
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
 
-	<div class="ui centered grid">
-		
-		<div class="fifteen wide mobile fifteen wide tablet four wide computer column">
-			<div class="ui inverted accordion">
-	<div id="header" class="ui inverted segment column box">		
-		
-		<header id="author" class="ui top attached center aligned inverted segment">
-			
-<div class="ui small circular image">
-	
-		<img src="logo_ricoai.png">
-	
+      </span>
+    </span>
+  </span>
+</header>
+
+
+  <div class="content">
+    
+  <div class="posts">
+    
+    
+    
+
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="/blog/ros-actions/">ROS Actions</a></h1>
+      <div class="post-meta">
+        <span class="post-date">
+          2019-01-04
+        </span>
+        <span class="post-author">— Written by Rico Castelo</span>
+        
+          <span class="post-read-time">— 2 min read</span>
+        
+      </div>
+
+
+      
+        <span class="post-tags">
+          
+            #<a href="/tags/ros/">ros</a>&nbsp;
+          
+            #<a href="/tags/ros-action/">ros action</a>&nbsp;
+          
+        </span>
+      
+
+      
+
+      <div class="post-content">
+        
+          ROS Actions.  Similar to an ROS Service except you can do other things while the action is running. Actions are asynchronous.
+        
+      </div>
+      <div><a class="read-more button" href="/blog/ros-actions/">Read more →</a></div>
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="/blog/ros-service/">ROS Service</a></h1>
+      <div class="post-meta">
+        <span class="post-date">
+          2019-01-04
+        </span>
+        <span class="post-author">— Written by Rico Castelo</span>
+        
+          <span class="post-read-time">— 2 min read</span>
+        
+      </div>
+
+
+      
+        <span class="post-tags">
+          
+            #<a href="/tags/ros/">ros</a>&nbsp;
+          
+            #<a href="/tags/ros-service/">ros service</a>&nbsp;
+          
+        </span>
+      
+
+      
+
+      <div class="post-content">
+        
+          A ROS service is a node that must run and you must wait until it has completed.
+        
+      </div>
+      <div><a class="read-more button" href="/blog/ros-service/">Read more →</a></div>
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="/blog/ros-topic/">ROS Topic</a></h1>
+      <div class="post-meta">
+        <span class="post-date">
+          2019-01-01
+        </span>
+        <span class="post-author">— Written by Rico Castelo</span>
+        
+          <span class="post-read-time">— 2 min read</span>
+        
+      </div>
+
+
+      
+        <span class="post-tags">
+          
+            #<a href="/tags/ros/">ros</a>&nbsp;
+          
+            #<a href="/tags/ros-topic/">ros topic</a>&nbsp;
+          
+        </span>
+      
+
+      
+
+      <div class="post-content">
+        
+          Notes about an ROS Topic.  This will describe a basic publisher and subscriber topic.  Where to find the list of topics and the list of possible messages for a topic.  How to install a new message for a topic.
+        
+      </div>
+      <div><a class="read-more button" href="/blog/ros-topic/">Read more →</a></div>
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="/blog/intel_euclid/">Intel Euclid</a></h1>
+      <div class="post-meta">
+        <span class="post-date">
+          2018-12-18
+        </span>
+        <span class="post-author">— Written by Rico Castelo</span>
+        
+          <span class="post-read-time">— 1 min read</span>
+        
+      </div>
+
+
+      
+        <span class="post-tags">
+          
+            #<a href="/tags/euclid/">euclid</a>&nbsp;
+          
+            #<a href="/tags/ros/">ros</a>&nbsp;
+          
+            #<a href="/tags/intel/">intel</a>&nbsp;
+          
+            #<a href="/tags/python/">python</a>&nbsp;
+          
+        </span>
+      
+
+      
+
+      <div class="post-content">
+        
+          
+        
+      </div>
+      <div><a class="read-more button" href="/blog/intel_euclid/">Read more →</a></div>
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="/blog/ros-euclid/">ROS Intel Euclid Install on Nvidia Jeston TX1</a></h1>
+      <div class="post-meta">
+        <span class="post-date">
+          2018-12-05
+        </span>
+        <span class="post-author">— Written by Rico Castelo</span>
+        
+          <span class="post-read-time">— 2 min read</span>
+        
+      </div>
+
+
+      
+        <span class="post-tags">
+          
+            #<a href="/tags/euclid/">euclid</a>&nbsp;
+          
+            #<a href="/tags/ros/">ros</a>&nbsp;
+          
+            #<a href="/tags/nvidia/">nvidia</a>&nbsp;
+          
+            #<a href="/tags/tx1/">TX1</a>&nbsp;
+          
+            #<a href="/tags/jestson/">jestson</a>&nbsp;
+          
+        </span>
+      
+
+      
+
+      <div class="post-content">
+        
+          ROS Intel Euclid Install on Nvidia Jeston TX1
+        
+      </div>
+      <div><a class="read-more button" href="/blog/ros-euclid/">Read more →</a></div>
+    </div>
+    
+    <div class="pagination">
+  <div class="pagination__buttons">
+    
+    
+      <span class="button next">
+        <a href="/page/2/">
+          <span class="button__text">Older posts</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+    
+  </div>
 </div>
 
+  </div>
 
-<h3 class="ui header">
-	Rico Castelo
-	<div class="sub header">I like to build things.</div>
-</h3>
+  </div>
 
-		</header>
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <a href="/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" width="44" height="44" viewBox="0 0 44 44">
+  <polyline fill="none" stroke="#000" stroke-width="2" points="15 8 29.729 22.382 15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">rico.ai</span>
+    <span class="logo__cursor"></span>
+  
+</a>
 
-		
-		<div class="active title header-title">
-			
-				<div id="tag-category-pop" class="ui red right corner label">
-					<i class="hand point icon up" title="Click this to pop tags and categories"></i>
-				</div>
-			
-		</div>
-		
-		
-		<div id="tag-category" class="active content">
-			
-				<section class="ui attached center aligned inverted segment dream-tags none flexbox">
-					
+      <div class="copyright">
+        <span>© 2019 Powered by <a href="https://gohugo.io">Hugo</a></span>
+        <span>Theme created by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+    
+  </div>
+</footer>
 
-
-
-
-	
-		<a class="ui label green " href="/tags/donkey" title="donkey">donkey</a>
-	
-		<a class="ui label blue " href="/tags/donkeycar" title="donkeycar">donkeycar</a>
-	
-		<a class="ui label olive " href="/tags/intel-euclid" title="intel-euclid">intel-euclid</a>
-	
-		<a class="ui label yellow " href="/tags/jestson" title="jestson">jestson</a>
-	
-		<a class="ui label green " href="/tags/nerual-network" title="nerual-network">nerual-network</a>
-	
-		<a class="ui label red " href="/tags/nvidia" title="nvidia">nvidia</a>
-	
-		<a class="ui label red " href="/tags/python" title="python">python</a>
-	
-		<a class="ui label brown " href="/tags/ros" title="ros">ros</a>
-	
-		<a class="ui label green " href="/tags/tensorflow" title="tensorflow">tensorflow</a>
-	
-		<a class="ui label purple " href="/tags/topic" title="topic">topic</a>
-	
-		<a class="ui label purple " href="/tags/tx1" title="tx1">tx1</a>
-	
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
 
 
-				</section>
-			
-
-			
-				<section class="ui attached inverted segment dream-categories both flexbox">
-					<div class="inverted accordion">
-						
-	
-	<div class="title">
-		<i class="dropdown icon"></i>
-		<a class="link" href="/categories/donkeycar">donkeycar</a>
-	</div>
-
-	
-	<div class="content">
-		
-			<a class="item" href="https://www.rico.ai/posts/donkeycar-30-epochs/">
-				<div>
-					<i class="cocktail icon"></i>
-					<p>Donkeycar Test 4</p>
-				</div>
-			</a>
-		
-	</div>
-
-	
-	<div class="title">
-		<i class="dropdown icon"></i>
-		<a class="link" href="/categories/intel-euclid">intel-euclid</a>
-	</div>
-
-	
-	<div class="content">
-		
-			<a class="item" href="https://www.rico.ai/posts/intel_euclid/">
-				<div>
-					<i class="cocktail icon"></i>
-					<p>Intel Euclid</p>
-				</div>
-			</a>
-		
-			<a class="item" href="https://www.rico.ai/posts/ros-euclid/">
-				<div>
-					<i class="cocktail icon"></i>
-					<p>ROS Intel Euclid Install on Nvidia Jeston TX1</p>
-				</div>
-			</a>
-		
-	</div>
-
-	
-	<div class="title">
-		<i class="dropdown icon"></i>
-		<a class="link" href="/categories/nvidia-jetson-tx1">nvidia-jetson-tx1</a>
-	</div>
-
-	
-	<div class="content">
-		
-			<a class="item" href="https://www.rico.ai/posts/ros-euclid/">
-				<div>
-					<i class="cocktail icon"></i>
-					<p>ROS Intel Euclid Install on Nvidia Jeston TX1</p>
-				</div>
-			</a>
-		
-	</div>
-
-	
-	<div class="title">
-		<i class="dropdown icon"></i>
-		<a class="link" href="/categories/ros">ros</a>
-	</div>
-
-	
-	<div class="content">
-		
-			<a class="item" href="https://www.rico.ai/posts/ros-topic/">
-				<div>
-					<i class="cocktail icon"></i>
-					<p>ROS Topic</p>
-				</div>
-			</a>
-		
-			<a class="item" href="https://www.rico.ai/posts/intel_euclid/">
-				<div>
-					<i class="cocktail icon"></i>
-					<p>Intel Euclid</p>
-				</div>
-			</a>
-		
-			<a class="item" href="https://www.rico.ai/posts/ros-euclid/">
-				<div>
-					<i class="cocktail icon"></i>
-					<p>ROS Intel Euclid Install on Nvidia Jeston TX1</p>
-				</div>
-			</a>
-		
-	</div>
-
-	
-	<div class="title">
-		<i class="dropdown icon"></i>
-		<a class="link" href="/categories/tensorflow">tensorflow</a>
-	</div>
-
-	
-	<div class="content">
-		
-			<a class="item" href="https://www.rico.ai/posts/donkeycar-30-epochs/">
-				<div>
-					<i class="cocktail icon"></i>
-					<p>Donkeycar Test 4</p>
-				</div>
-			</a>
-		
-	</div>
-
-
-					</div>
-				</section>
-			
-		</div>
-
-		
-		<footer class="ui bottom attached center aligned inverted segment">
-			
-
-	<p>© 2019 Rico.ai</p>
-
-
-<p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with <a href="https://github.com/UtkarshVerma/hugo-dream-plus" target="_blank">Dream Plus</a> theme.</p>
-
-		</footer>
-	</div>
+  
 </div>
 
-		</div>
-
-		
-		<div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list">
-			<div class="cards row box">
-				
-				
-				
-					
-
-
-<article class="blog-card none flexbox" style="background-image: url(img/default1.jpg)">
-	
-	<img class="image" src="img/default1.jpg"></img>
-	<div class="title-content twemoji">
-		<h3><a class="title" href=https://www.rico.ai/posts/ros-topic/>ROS Topic</a></h3>
-		<div class="intro twemoji">
-			
-				Notes on using ROS Topics
-			
-		</div>
-	</div>
-
-	
-	<div class="utility-info">
-		<ul class="utility-list">
-			
-				<div><i class="comment icon"></i><span class="disqus-comment-count" data-disqus-identifier="721a5b50e2a2a3c42e4f9eac154414fe"></span></div>
-			
-			<div><span><i class="calendar icon"></i>Jan 1, 2019</span></div>
-			<div><span><i class="clock icon"></i>2 min read</span></div>
-		</ul>
-	</div>
-	<div class="color-overlay"></div>
-</article>
-
-				
-					
-
-
-<article class="blog-card none flexbox" style="background-image: url(/img/default5.jpg)">
-	
-	<img class="image" src="/img/default5.jpg"></img>
-	<div class="title-content twemoji">
-		<h3><a class="title" href=https://www.rico.ai/posts/intel_euclid/>Intel Euclid</a></h3>
-		<div class="intro twemoji">
-			
-				Details about the Intel Euclid
-			
-		</div>
-	</div>
-
-	
-	<div class="utility-info">
-		<ul class="utility-list">
-			
-				<div><i class="comment icon"></i><span class="disqus-comment-count" data-disqus-identifier="272409dc58b1b88651c99977ade09329"></span></div>
-			
-			<div><span><i class="calendar icon"></i>Dec 18, 2018</span></div>
-			<div><span><i class="clock icon"></i>1 min read</span></div>
-		</ul>
-	</div>
-	<div class="color-overlay"></div>
-</article>
-
-				
-					
-
-
-<article class="blog-card none flexbox" style="background-image: url(/img/default1.jpg)">
-	
-	<img class="image" src="/img/default1.jpg"></img>
-	<div class="title-content twemoji">
-		<h3><a class="title" href=https://www.rico.ai/posts/ros-euclid/>ROS Intel Euclid Install on Nvidia Jeston TX1</a></h3>
-		<div class="intro twemoji">
-			
-				Details to install the Intel Euclid environment on a Nvidia Jetson TX1
-			
-		</div>
-	</div>
-
-	
-	<div class="utility-info">
-		<ul class="utility-list">
-			
-				<div><i class="comment icon"></i><span class="disqus-comment-count" data-disqus-identifier="5df8f60057db61add8cd9d3b646745f0"></span></div>
-			
-			<div><span><i class="calendar icon"></i>Dec 18, 2018</span></div>
-			<div><span><i class="clock icon"></i>2 min read</span></div>
-		</ul>
-	</div>
-	<div class="color-overlay"></div>
-</article>
-
-				
-					
-
-
-<article class="blog-card none flexbox" style="background-image: url(/img/default1.jpg)">
-	
-	<img class="image" src="/img/default1.jpg"></img>
-	<div class="title-content twemoji">
-		<h3><a class="title" href=https://www.rico.ai/posts/donkeycar-30-epochs/>Donkeycar Test 4</a></h3>
-		<div class="intro twemoji">
-			
-				Donkeycar Test 4
-			
-		</div>
-	</div>
-
-	
-	<div class="utility-info">
-		<ul class="utility-list">
-			
-				<div><i class="comment icon"></i><span class="disqus-comment-count" data-disqus-identifier="fa153178a54d813b4502f7d7b0f5ee1d"></span></div>
-			
-			<div><span><i class="calendar icon"></i>Nov 2, 2017</span></div>
-			<div><span><i class="clock icon"></i>2 min read</span></div>
-		</ul>
-	</div>
-	<div class="color-overlay"></div>
-</article>
-
-				
-			</div>
-		</div>
-	</div>
-
-				</div>
-				<div class="back">
-					
-<nav class="ui top secondary menu bar">
-	<div class="item">
-		<i class="inverted big link bullseye icon dream-flip-toggle" title="About Me"></i>
-	</div>
-	
-		
-	
-		
-	
-		
-	
-		
-	
-
-	
-	
-	
-	
-	
-	
-	
-		
-		
-			<div class="item">
-				<a href="https://github.com/ricoai" target="	_blank">
-					<i id="ico" class="inverted big link github icon" title="GitHub"></i>
-				</a>
-			</div>
-		
-	
-		
-		
-			<div class="item">
-				<a href="mailto:rico.deep.ai@gmail.com" target="	_blank">
-					<i id="ico" class="inverted big link mail icon" title="Email"></i>
-				</a>
-			</div>
-		
-	
-		
-		
-			<div class="item">
-				<a href="https://twitter.com/rico_deep_ai" target="	_blank">
-					<i id="ico" class="inverted big link twitter icon" title="Twitter"></i>
-				</a>
-			</div>
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-</nav>
-
-
-
-<div class="ui centered grid about">
-	<div class="sixteen wide mobile fifteen wide tablet fifteen wide computer column about">
-		<section class="ui stacked segments">
-			<div class="ui inverted segment">
-				<article class="twemoji">
-					<h1>So, Who Am I?</h1>
-
-<hr />
-
-<p><br>
-I like to build things.  Robots, software, furniture. THINGS</p>
-
-<p>That’s all that I can think of right now. Hopefully I’ll add something more to this later on. 😅</p>
-
-<p>Curious about me? Use the social links above to check out my profiles.</p>
-
-<p>You can also support me on <a href="https://patreon.com/Ricoai" target="_blank">Patreon</a>. I&rsquo;d really appreciate it.</p>
-
-				</article>
-				
-				
-			</div>
-		</section>
-	</div>
-</div>
-
-				</div>
-			</div>
-		</div>
-
-		
-
-<script src="/js/site.js"></script>
-
-
-
-	<script src="https://twemoji.maxcdn.com/2/twemoji.min.js?2.6"></script>
-
-
-
-
-
-
-
-
-	<script id="dsq-count-scr" src="//ricoai.disqus.com/count.js" async></script>
-
-
-
-
-	
-	<script>
-		window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-		ga('create', 'UA-131554734-1', 'auto');
-		ga('send', 'pageview');
-	</script>
-	<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
-		
-
-
-		
-
-	<script>
-		(function () {
-		  console.log("Twemoji up and making stuff colourful!");
-		  for (var b = document.getElementsByClassName("twemoji"), a = 0; a < b.length; a++) {
-			twemoji.parse(b[a]);
-		  }
-		})();
-	</script>
-
-
-	</body>
+</body>
 </html>

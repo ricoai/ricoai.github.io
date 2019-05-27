@@ -2,22 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Topic on Rico.ai</title>
-    <link>https://www.rico.ai/tags/topic/</link>
+    <link>http://www.rico.ai/tags/topic/</link>
     <description>Recent content in Topic on Rico.ai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Jan 2019 12:29:40 +0600</lastBuildDate>
     
-	<atom:link href="https://www.rico.ai/tags/topic/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.rico.ai/tags/topic/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ROS Topic</title>
-      <link>https://www.rico.ai/posts/ros-topic/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <link>http://www.rico.ai/blog/ros-topic/</link>
+      <pubDate>Tue, 01 Jan 2019 12:29:40 +0600</pubDate>
       
-      <guid>https://www.rico.ai/posts/ros-topic/</guid>
-      <description>&lt;p&gt;Notes about an ROS Topic.  This will describe a basic publisher and subscriber topic.  Where to find the list of topics and the list of possible messages for a topic.  How to install a new message for a topic.&lt;/p&gt;</description>
+      <guid>http://www.rico.ai/blog/ros-topic/</guid>
+      <description>rostopic list rosmsg list  Publisher Publish messages into a topic
+import rospy from geometry_msgs.msg import Twist rospy.init_node(&#39;robot_mover&#39;) pub = rospy.Publisher(&#39;/cmd_move&#39;, Twist, queue_size=1) # 2 Hz rate = rospy.Rate(2) move = Twist() move.linear.x = 0.5 # Move forward on x 0.5 move.angular.z = 0.5 # Move at an anglular rate of 0.5 while not rospy.is_shutdown(): pub.publish(move) # Publish the move rate.sleep() # Maintain the refresh rate  Subscriber Read messages from a topic</description>
     </item>
     
   </channel>
