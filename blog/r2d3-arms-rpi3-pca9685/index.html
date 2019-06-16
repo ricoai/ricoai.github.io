@@ -198,6 +198,13 @@ Pin 5 (GPIO3)        SCL
 Pin 9 (GND)          GND
 </code></pre>
 
+<h2 id="servo-color-code">Servo Color Code</h2>
+
+<pre><code>Brown  = GND
+Red    = Power 
+Orange = Signal
+</code></pre>
+
 <pre><code>Power Supply         PCA9685
 ------------------------------
 5V                   5V
@@ -242,7 +249,7 @@ sudo apt install i2c-tools
 
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AdafruitServoControl</span>:
     <span style="color:#e6db74">&#34;&#34;&#34;
-</span><span style="color:#e6db74">    Use the Maestro board to control the servos.
+</span><span style="color:#e6db74">    Use the Adafruit PCA9685 board to control the servos.
 </span><span style="color:#e6db74">    https://learn.adafruit.com/adafruit-16-channel-servo-driver-with-raspberry-pi?view=all
 </span><span style="color:#e6db74">    pip install adafruit-circuitpython-servokit
 </span><span style="color:#e6db74">    sudo apt-get install python-smbus
