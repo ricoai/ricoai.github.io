@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rpi3 on Rico.ai</title>
+    <link>/tags/rpi3/</link>
+    <description>Recent content in Rpi3 on Rico.ai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Jun 2019 12:29:40 +0600</lastBuildDate>
+    
+	<atom:link href="/tags/rpi3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>R2D2 Arm Connected to RPI3 With PCA9685</title>
+      <link>/blog/r2d3-arms-rpi3-pca9685/</link>
+      <pubDate>Sat, 15 Jun 2019 12:29:40 +0600</pubDate>
+      
+      <guid>/blog/r2d3-arms-rpi3-pca9685/</guid>
+      <description>RPI3 You can use the RPI3 to use the servos. But the servo power will need to separte from the RPI3. The RPI3&amp;rsquo;s 5V is not enough to use servos long term. For initial testing they will work. But what you will find is the servos will glitch if connected to the RPI3&amp;rsquo;s header. The RPI3 causes the glitches. So eventually you need to find an alternative way to run the servos.</description>
+    </item>
+    
+    <item>
+      <title>R2D2 Arm Connected to RPI3 With Micro Maestro</title>
+      <link>/blog/r2d3-arms-rpi3-maestro/</link>
+      <pubDate>Fri, 14 Jun 2019 12:29:40 +0600</pubDate>
+      
+      <guid>/blog/r2d3-arms-rpi3-maestro/</guid>
+      <description>RPI3 You can use the RPI3 to use the servos. But the servo power will need to separte from the RPI3. The RPI3&amp;rsquo;s 5V is not enough to use servos long term. For initial testing they will work. But what you will find is the servos will glitch if connected to the RPI3&amp;rsquo;s header. The RPI3 causes the glitches. So eventually you need to find an alternative way to run the servos.</description>
+    </item>
+    
+    <item>
+      <title>R2D2 Arm Connected to RPI3</title>
+      <link>/blog/r2d2-arms-rpi3/</link>
+      <pubDate>Thu, 13 Jun 2019 12:29:40 +0600</pubDate>
+      
+      <guid>/blog/r2d2-arms-rpi3/</guid>
+      <description>RPI3 You can use the RPI3 to use the servos. But the servo power will need to separte from the RPI3. The RPI3&amp;rsquo;s 5V is not enough to use servos long term. For initial testing they will work. But what you will find is the servos will glitch if connected to the RPI3&amp;rsquo;s header. The RPI3 causes the glitches. So eventually you need to find an alternative way to run the servos.</description>
+    </item>
+    
+    <item>
+      <title>R2D2 Flask GUI</title>
+      <link>/blog/r2d2-flask-ui/</link>
+      <pubDate>Thu, 13 Jun 2019 12:29:40 +0600</pubDate>
+      
+      <guid>/blog/r2d2-flask-ui/</guid>
+      <description>Flask GUI The code is written in Python so I can utilize ROS in the future. I wanted to use a GUI that I can use in the web browser, so it will work on any platform including mobile. The RPI3 in my R2D2 will have an wifi connection. So I can connect Ad-Hoc directly to the RPI3 and use the browser to control some of the accessories in my R2D2.</description>
+    </item>
+    
+  </channel>
+</rss>

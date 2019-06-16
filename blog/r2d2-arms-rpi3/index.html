@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>R2D2 Arm Connected to RPI3 :: Rico.ai — My notes in the AI world.</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="RPI3 You can use the RPI3 to use the servos. But the servo power will need to separte from the RPI3. The RPI3&amp;rsquo;s 5V is not enough to use servos long term. For initial testing they will work. But what you will find is the servos will glitch if connected to the RPI3&amp;rsquo;s header. The RPI3 causes the glitches. So eventually you need to find an alternative way to run the servos."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/blog/r2d2-arms-rpi3/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="R2D2 Arm Connected to RPI3 :: Rico.ai — My notes in the AI world." />
+<meta name="twitter:description" content="RPI3 You can use the RPI3 to use the servos. But the servo power will need to separte from the RPI3. The RPI3&amp;rsquo;s 5V is not enough to use servos long term. For initial testing they will work. But what you will find is the servos will glitch if connected to the RPI3&amp;rsquo;s header. The RPI3 causes the glitches. So eventually you need to find an alternative way to run the servos." />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="Rico Castelo" />
+<meta name="twitter:image" content="/images/blog/r2d2-arms-rpi3/sch_rpi3_sm.png">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="R2D2 Arm Connected to RPI3 :: Rico.ai — My notes in the AI world.">
+<meta property="og:description" content="RPI3 You can use the RPI3 to use the servos. But the servo power will need to separte from the RPI3. The RPI3&amp;rsquo;s 5V is not enough to use servos long term. For initial testing they will work. But what you will find is the servos will glitch if connected to the RPI3&amp;rsquo;s header. The RPI3 causes the glitches. So eventually you need to find an alternative way to run the servos." />
+<meta property="og:url" content="/blog/r2d2-arms-rpi3/" />
+<meta property="og:site_name" content="R2D2 Arm Connected to RPI3" />
+<meta property="og:image" content="/images/blog/r2d2-arms-rpi3/sch_rpi3_sm.png">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2019-06-13 12:29:40 &#43;0600 &#43;0600" />
+
+
+
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-131554734-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-1341867426077422",
+    enable_page_level_ads: true
+  });
+</script>
+</head>
+<body class="dark-theme">
+<div class="container">
+  <header class="header">
+  <span class="header__inner">
+    <a href="/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" width="44" height="44" viewBox="0 0 44 44">
+  <polyline fill="none" stroke="#000" stroke-width="2" points="15 8 29.729 22.382 15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">rico.ai</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/blog">Blog</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/blog">Blog</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+  <div class="content">
+    
+  <div class="post">
+    <h2 class="post-title"><a href="/blog/r2d2-arms-rpi3/">R2D2 Arm Connected to RPI3</a></h2>
+    <div class="post-meta">
+      
+        <span class="post-date">
+            2019-06-13
+        </span>
+      
+      <span class="post-author">— Written by Rico Castelo</span>
+      
+        <span class="post-read-time">— 4 min read</span>
+      
+    </div>
+
+    
+      <span class="post-tags">
+        
+          #<a href="/tags/r2d2/">R2D2</a>&nbsp;
+        
+          #<a href="/tags/rpi3/">RPI3</a>&nbsp;
+        
+          #<a href="/tags/servo/">Servo</a>&nbsp;
+        
+      </span>
+    
+
+    
+      
+        <img src="/images/blog/r2d2-arms-rpi3/sch_rpi3_sm.png" class="" />
+      
+    
+
+    <div class="post-content">
+      
+
+<h1 id="rpi3">RPI3</h1>
+
+<p>You can use the RPI3 to use the servos.  But the servo power will need to separte from the RPI3.  The RPI3&rsquo;s 5V is not enough to use servos long term.  For initial testing they will work.  But what you will find is the servos will glitch if connected to the RPI3&rsquo;s header.  The RPI3 causes the glitches.  So eventually you need to find an alternative way to run the servos.  There are two options I had on hand: a Maestro Mirco and PCA9685.</p>
+
+<p>I included some basic code to just make the servo work.  I also added the actual code I used to control the arms through the RPI3.</p>
+
+<p>Read here on the Flask UI setup.</p>
+
+<h2 id="function-for-angle-to-duty-cycle">Function for Angle to Duty Cycle</h2>
+
+<p>The difficult part with controlling the servo with a RPI3 is the value you use to move the servo.  The value is given as a duty cycle.  I looked around how to convert an angle to duty cycle.  I finally found one that worked with my servos.  I am using Tower Pro MG995.  This function should work for must people, but you can change it if needed.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#a6e22e">@staticmethod</span>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">calc_duty_cycle_from_angle</span>(angle):
+        <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">        Calculate the duty cycle based off the angle given.  Then
+</span><span style="color:#e6db74">        move the servo based off this angle.
+</span><span style="color:#e6db74">        :param angle:
+</span><span style="color:#e6db74">        :return: Duty cycle for servo based off angle.
+</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+        <span style="color:#75715e">#return ((angle / 180.0) + 1.0) * 5.0</span>
+        <span style="color:#66d9ef">return</span> angle <span style="color:#f92672">/</span> <span style="color:#ae81ff">18.0</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">3.0</span></code></pre></div>
+
+<h1 id="schematic">Schematic</h1>
+
+<p>Connect the servos to the RPI3 directly.</p>
+
+<h2 id="servo-color-code">Servo Color Code</h2>
+
+<pre><code>Brown  = GND
+Red    = Power 
+Orange = Signal
+</code></pre>
+
+<h2 id="pinout">Pinout</h2>
+
+<pre><code>Orange -&gt; Pin 7 (RPI3 GPIO 4)
+Red    -&gt; Pin 2 (RPI3 5V)
+Brown  -&gt; Pin 6 (RPI3 GND)
+</code></pre>
+
+
+  <figure class="left" >
+    <img src="/images/blog/r2d2-arms-rpi3/servo_arms_rpi3.png"   />
+    
+  </figure>
+
+
+
+<h1 id="video">Video</h1>
+
+<p>RPI3 Running the Servos
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/q2yWD6PR1Eo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+
+<h1 id="code">Code</h1>
+
+<p><a href="https://github.com/ricoai/R2D2/blob/master/controls/rpi3_servo_control.py">https://github.com/ricoai/R2D2/blob/master/controls/rpi3_servo_control.py</a>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> RPi.GPIO <span style="color:#f92672">as</span> GPIO
+<span style="color:#f92672">import</span> time
+<span style="color:#f92672">import</span> sys
+
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Rpi3ServoControl</span>:
+    <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">    Use the RPI3 to control the servos.
+</span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+
+    <span style="color:#66d9ef">def</span> __init__(self, servo_pin, init_angle<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0</span>):
+        self<span style="color:#f92672">.</span>servo_pin <span style="color:#f92672">=</span> servo_pin
+        self<span style="color:#f92672">.</span>gpio_pin <span style="color:#f92672">=</span> None
+        self<span style="color:#f92672">.</span>last_angle <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span>
+
+        self<span style="color:#f92672">.</span>setup_pin()            <span style="color:#75715e"># Setup GPIO pin</span>
+        self<span style="color:#f92672">.</span>set_angle(init_angle)
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">setup_pin</span>(self):
+        <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">        Setup the GPIO pin.  Use the GPIO pin given in the constructor.
+</span><span style="color:#e6db74">        :return:
+</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+        GPIO<span style="color:#f92672">.</span>setmode(GPIO<span style="color:#f92672">.</span>BCM)                          <span style="color:#75715e"># Setup GPIO pin to BCM</span>
+        GPIO<span style="color:#f92672">.</span>setup(self<span style="color:#f92672">.</span>servo_pin, GPIO<span style="color:#f92672">.</span>OUT)            <span style="color:#75715e"># Set GPIO pin to output</span>
+        self<span style="color:#f92672">.</span>gpio_pin <span style="color:#f92672">=</span> GPIO<span style="color:#f92672">.</span>PWM(self<span style="color:#f92672">.</span>servo_pin, <span style="color:#ae81ff">50</span>)    <span style="color:#75715e"># GPIO PWM with 50Hz</span>
+        self<span style="color:#f92672">.</span>gpio_pin<span style="color:#f92672">.</span>start(<span style="color:#ae81ff">2.5</span>)                        <span style="color:#75715e"># Initialization</span>
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">shutdown</span>(self):
+        <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">        Shutdown the object.  This will properly shutdown everything.
+</span><span style="color:#e6db74">        :return:
+</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+        self<span style="color:#f92672">.</span>gpio_pin<span style="color:#f92672">.</span>stop()
+        GPIO<span style="color:#f92672">.</span>cleanup()
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">center</span>(self):
+        <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">        Center the servo.
+</span><span style="color:#e6db74">        :return:
+</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+        self<span style="color:#f92672">.</span>set_angle(<span style="color:#ae81ff">0.0</span>)  <span style="color:#75715e"># CENTER (7.5)</span>
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">set_angle</span>(self, angle):
+        <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">        Set the servo to the given angle.
+</span><span style="color:#e6db74">        :param angle: Angle to move the servo
+</span><span style="color:#e6db74">        :return:
+</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+        <span style="color:#66d9ef">if</span> angle <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">180</span>:
+            angle <span style="color:#f92672">=</span> <span style="color:#ae81ff">180</span>
+        <span style="color:#66d9ef">if</span> angle <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
+            angle <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+
+        <span style="color:#75715e"># Cacluate the duty cycle to move to that angle</span>
+        dc <span style="color:#f92672">=</span> Rpi3ServoControl<span style="color:#f92672">.</span>calc_duty_cycle_from_angle(angle)
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Pin: &#34;</span> <span style="color:#f92672">+</span> str(self<span style="color:#f92672">.</span>servo_pin) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; Angle: &#34;</span> <span style="color:#f92672">+</span> str(angle) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; DC: &#34;</span> <span style="color:#f92672">+</span> str(dc))
+
+        <span style="color:#75715e"># Move the servo</span>
+        self<span style="color:#f92672">.</span>gpio_pin<span style="color:#f92672">.</span>ChangeDutyCycle(dc)
+
+        time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.1</span>)
+
+        <span style="color:#75715e"># Record the last angle</span>
+        self<span style="color:#f92672">.</span>last_angle <span style="color:#f92672">=</span> angle
+
+    <span style="color:#a6e22e">@staticmethod</span>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">calc_duty_cycle_from_angle</span>(angle):
+        <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">        Calculate the duty cycle based off the angle given.  Then
+</span><span style="color:#e6db74">        move the servo based off this angle.
+</span><span style="color:#e6db74">        :param angle:
+</span><span style="color:#e6db74">        :return: Duty cycle for servo based off angle.
+</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+        <span style="color:#75715e">#return ((angle / 180.0) + 1.0) * 5.0</span>
+        <span style="color:#66d9ef">return</span> angle <span style="color:#f92672">/</span> <span style="color:#ae81ff">18.0</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">3.0</span>
+
+
+<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
+    <span style="color:#66d9ef">if</span> len(sys<span style="color:#f92672">.</span>argv) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>:
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Using Servo Pin &#34;</span> <span style="color:#f92672">+</span> sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">1</span>])
+        rpi3_servo <span style="color:#f92672">=</span> Rpi3ServoControl(int(sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">1</span>]))
+    <span style="color:#66d9ef">else</span>:
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Using Servo Pin 4&#34;</span>)
+        rpi3_servo <span style="color:#f92672">=</span> Rpi3ServoControl(<span style="color:#ae81ff">4</span>)
+
+    <span style="color:#66d9ef">if</span> len(sys<span style="color:#f92672">.</span>argv) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">2</span>:
+        angle_list <span style="color:#f92672">=</span> sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">2</span>:]
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Angles to try: &#34;</span> <span style="color:#f92672">+</span> str(sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">2</span>:]))
+        <span style="color:#66d9ef">for</span> idx <span style="color:#f92672">in</span> range(len(angle_list)):
+            rpi3_servo<span style="color:#f92672">.</span>set_angle(float(angle_list[idx]))
+            time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.5</span>)
+    rpi3_servo<span style="color:#f92672">.</span>shutdown()</code></pre></div></p>
+
+<h1 id="basic-code">Basic Code</h1>
+
+<p>In this example, I connected the servo signal pin to RPI3 GPIO pin 4.  This will then open and close the servo.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> RPi.GPIO <span style="color:#f92672">as</span> GPIO
+<span style="color:#f92672">import</span> time
+
+servoPIN <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>
+GPIO<span style="color:#f92672">.</span>setmode(GPIO<span style="color:#f92672">.</span>BCM)
+GPIO<span style="color:#f92672">.</span>setup(servoPIN, GPIO<span style="color:#f92672">.</span>OUT)
+
+p <span style="color:#f92672">=</span> GPIO<span style="color:#f92672">.</span>PWM(servoPIN, <span style="color:#ae81ff">50</span>) <span style="color:#75715e"># GPIO 17 for PWM with 50Hz</span>
+p<span style="color:#f92672">.</span>start(<span style="color:#ae81ff">2.5</span>) <span style="color:#75715e"># Initialization</span>
+<span style="color:#66d9ef">try</span>:
+    <span style="color:#66d9ef">while</span> True:
+        p<span style="color:#f92672">.</span>ChangeDutyCycle(<span style="color:#ae81ff">5</span>)
+        time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.5</span>)
+        p<span style="color:#f92672">.</span>ChangeDutyCycle(<span style="color:#ae81ff">7.5</span>)      <span style="color:#75715e"># CENTER</span>
+        time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.5</span>)
+        p<span style="color:#f92672">.</span>ChangeDutyCycle(<span style="color:#ae81ff">10</span>)
+        time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.5</span>)
+        p<span style="color:#f92672">.</span>ChangeDutyCycle(<span style="color:#ae81ff">12.5</span>)     <span style="color:#75715e"># 180 degrees</span>
+        time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.5</span>)
+        p<span style="color:#f92672">.</span>ChangeDutyCycle(<span style="color:#ae81ff">10</span>)
+        time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.5</span>)
+        p<span style="color:#f92672">.</span>ChangeDutyCycle(<span style="color:#ae81ff">7.5</span>)      <span style="color:#75715e"># CENTER</span>
+        time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.5</span>)
+        p<span style="color:#f92672">.</span>ChangeDutyCycle(<span style="color:#ae81ff">5</span>)
+        time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.5</span>)
+        p<span style="color:#f92672">.</span>ChangeDutyCycle(<span style="color:#ae81ff">2.5</span>)      <span style="color:#75715e"># 0 degrees</span>
+        time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.5</span>)
+<span style="color:#66d9ef">except</span> <span style="color:#a6e22e">KeyboardInterrupt</span>:
+    p<span style="color:#f92672">.</span>stop()
+    GPIO<span style="color:#f92672">.</span>cleanup()</code></pre></div>
+
+    </div>
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h">Read other posts</span>
+          <hr />
+        </div>
+        <div class="pagination__buttons">
+          
+            <span class="button previous">
+              <a href="/blog/r2d3-arms-rpi3-maestro/">
+                <span class="button__icon">←</span>
+                <span class="button__text">R2D2 Arm Connected to RPI3 With Micro Maestro</span>
+              </a>
+            </span>
+          
+          
+            <span class="button next">
+              <a href="/blog/r2d2-flask-ui/">
+                <span class="button__text">R2D2 Flask GUI</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ricoai" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <a href="/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" width="44" height="44" viewBox="0 0 44 44">
+  <polyline fill="none" stroke="#000" stroke-width="2" points="15 8 29.729 22.382 15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">rico.ai</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+      <div class="copyright">
+        <span>© 2019 Powered by <a href="https://gohugo.io">Hugo</a></span>
+        <span>Theme created by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+  
+</div>
+
+</body>
+</html>

@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/blog/r2d3-arms-rpi3-pca9685/</loc>
+    <lastmod>2019-06-15T12:29:40+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/r2d3-arms-rpi3-maestro/</loc>
+    <lastmod>2019-06-14T12:29:40+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/r2d2-arms-rpi3/</loc>
+    <lastmod>2019-06-13T12:29:40+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/r2d2-flask-ui/</loc>
+    <lastmod>2019-06-13T12:29:40+06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/about/</loc>
     <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url>
@@ -43,7 +63,7 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2019-01-04T12:29:40+06:00</lastmod>
+    <lastmod>2019-06-15T12:29:40+06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -71,6 +91,18 @@
   </url>
   
   <url>
+    <loc>/tags/flask/</loc>
+    <lastmod>2019-06-13T12:29:40+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/gui/</loc>
+    <lastmod>2019-06-13T12:29:40+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/intel/</loc>
     <lastmod>2018-12-18T12:29:40+06:00</lastmod>
     <priority>0</priority>
@@ -79,6 +111,12 @@
   <url>
     <loc>/tags/jestson/</loc>
     <lastmod>2018-12-05T12:29:40+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/maestro/</loc>
+    <lastmod>2019-06-15T12:29:40+06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -95,14 +133,26 @@
   </url>
   
   <url>
+    <loc>/tags/pca9685/</loc>
+    <lastmod>2019-06-15T12:29:40+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/python/</loc>
     <lastmod>2018-12-18T12:29:40+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>/tags/r2d2/</loc>
+    <lastmod>2019-06-15T12:29:40+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/</loc>
-    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-15T12:29:40+06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -127,6 +177,18 @@
   <url>
     <loc>/tags/ros-topic/</loc>
     <lastmod>2019-01-01T12:29:40+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/rpi3/</loc>
+    <lastmod>2019-06-15T12:29:40+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/servo/</loc>
+    <lastmod>2019-06-14T12:29:40+06:00</lastmod>
     <priority>0</priority>
   </url>
   

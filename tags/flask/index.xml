@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Flask on Rico.ai</title>
+    <link>/tags/flask/</link>
+    <description>Recent content in Flask on Rico.ai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 13 Jun 2019 12:29:40 +0600</lastBuildDate>
+    
+	<atom:link href="/tags/flask/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>R2D2 Flask GUI</title>
+      <link>/blog/r2d2-flask-ui/</link>
+      <pubDate>Thu, 13 Jun 2019 12:29:40 +0600</pubDate>
+      
+      <guid>/blog/r2d2-flask-ui/</guid>
+      <description>Flask GUI The code is written in Python so I can utilize ROS in the future. I wanted to use a GUI that I can use in the web browser, so it will work on any platform including mobile. The RPI3 in my R2D2 will have an wifi connection. So I can connect Ad-Hoc directly to the RPI3 and use the browser to control some of the accessories in my R2D2.</description>
+    </item>
+    
+  </channel>
+</rss>

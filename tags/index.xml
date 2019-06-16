@@ -39,6 +39,24 @@
     </item>
     
     <item>
+      <title>Flask</title>
+      <link>/tags/flask/</link>
+      <pubDate>Thu, 13 Jun 2019 12:29:40 +0600</pubDate>
+      
+      <guid>/tags/flask/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gui</title>
+      <link>/tags/gui/</link>
+      <pubDate>Thu, 13 Jun 2019 12:29:40 +0600</pubDate>
+      
+      <guid>/tags/gui/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Intel</title>
       <link>/tags/intel/</link>
       <pubDate>Tue, 18 Dec 2018 12:29:40 +0600</pubDate>
@@ -53,6 +71,15 @@
       <pubDate>Wed, 05 Dec 2018 12:29:40 +0600</pubDate>
       
       <guid>/tags/jestson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maestro</title>
+      <link>/tags/maestro/</link>
+      <pubDate>Sat, 15 Jun 2019 12:29:40 +0600</pubDate>
+      
+      <guid>/tags/maestro/</guid>
       <description></description>
     </item>
     
@@ -75,11 +102,29 @@
     </item>
     
     <item>
+      <title>Pca9685</title>
+      <link>/tags/pca9685/</link>
+      <pubDate>Sat, 15 Jun 2019 12:29:40 +0600</pubDate>
+      
+      <guid>/tags/pca9685/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Python</title>
       <link>/tags/python/</link>
       <pubDate>Tue, 18 Dec 2018 12:29:40 +0600</pubDate>
       
       <guid>/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R2d2</title>
+      <link>/tags/r2d2/</link>
+      <pubDate>Sat, 15 Jun 2019 12:29:40 +0600</pubDate>
+      
+      <guid>/tags/r2d2/</guid>
       <description></description>
     </item>
     
@@ -116,6 +161,24 @@
       <pubDate>Tue, 01 Jan 2019 12:29:40 +0600</pubDate>
       
       <guid>/tags/ros-topic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rpi3</title>
+      <link>/tags/rpi3/</link>
+      <pubDate>Sat, 15 Jun 2019 12:29:40 +0600</pubDate>
+      
+      <guid>/tags/rpi3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Servo</title>
+      <link>/tags/servo/</link>
+      <pubDate>Fri, 14 Jun 2019 12:29:40 +0600</pubDate>
+      
+      <guid>/tags/servo/</guid>
       <description></description>
     </item>
     
